@@ -1,0 +1,81 @@
+{
+    "books_list": {
+        "genres": [
+            {
+                "type": "Romance",
+                "books": [
+                    {
+                        "name": "Beautiful Disaster"
+                    },
+                    {
+                        "name": "Fifty Shades of Grey"
+                    },
+                    {
+                        "name": "Hopeless"
+                    },
+                    {
+                        "name": "The Fault in Our Stars"
+                    },
+                    {
+                        "name": "Divergent"
+                    }
+                ]
+            },
+            {
+                "type": "Thriller",
+                "books": [
+                    {
+                        "name": "And Then There Were None"
+                    },
+                    {
+                        "name": "The Da Vinci Code"
+                    },
+                    {
+                        "name": "The Hunger Games"
+                    },
+                    {
+                        "name": "Fight Club"
+                    },
+                    {
+                        "name": "Gone Girl"
+                    }
+                ]
+            }
+        ]
+    }
+}
+Parse JSON
+
+Books List
+
+Genres of Books
+1. Romance
+  Beautiful Disaster
+  Fifty Shades of Grey
+  Hopeless
+  The Fault in Our Stars
+  Divergent
+2. Thriller
+  And Then There Were None 
+  The Da Vinci Code
+  The Hunger Games
+  Fight Club
+  Gone Girl
+3. Fiction
+  The Chronicles of Narnia
+  Animal Farm
+  Gone with the Wind 
+  The Fault in Our Stars 
+4. Non-Fiction
+  To Kill a Mockingbird
+  The Diary of a Young Girl
+  Romeo and Juliet 
+  Lord of the Flies 
+  The Giving Tree 
+5. History
+  The Origin of Species 
+  The Complete Works 
+  The Republic 
+  The Communist Manifesto 
+  The Odyssey 
+

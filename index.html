@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sample</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" type="text/css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.5/angular.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.9.1/underscore-min.js"></script>
+    <script src="js/controllers/book_list_controller.js"></script>
+  </head>
+  <body class="bg-image">
+    <div class="container mt-5" ng-app="myBookApp">
+      <header-text></header-text>
+      <h5>Genres of Books</h5>
+
+      <div class="books_list" ng-controller="bookController">
+        <div class="row">
+          <div class="col-md-6 col-sm-6">
+            <ol>
+              <li ng-repeat="genre in booksList">{{genre.type | addTextLast}}
+                <ul class="" ng-repeat="book in genre.books | orderBy:'name'">
+                  <li class="">{{book.name}}</li>
+                </ul>                
+              </li>
+            </ol>
+            <div class="input-group">
+              <input type="text" name="genre" placeholder="Add Genre" class="form-control" ng-model="names.genreName">
+              <span class="input-group-btn">
+                <a href="javascript:void(0);" class="add_genre btn btn-success" ng-click="addNewGenre(booksList)">Add New Genre</a>
+              </span>
+            </div>
+          </div>
+          <div class="col-md-6 col-sm-6 mb-3">
+            <h4>New Book</h4>        
+            <select ng-model="selectedGenre" ng-init="selectedGenre" class="form-control" ng-options="option.type as option.type for option in booksList" ng-init="selectedGenre = options[0]">
+            </select>
+            <input type="text" name="book" placeholder="Add Book" class="book form-control mt-2" ng-model="names.bookName">
+            <a href="javascript:void(0);" class="add_book btn btn-success mt-2" ng-click="addNewBook()">Add New Book</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
