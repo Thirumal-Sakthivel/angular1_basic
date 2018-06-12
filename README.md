@@ -1,2 +1,1 @@
-# angular1_basic
-# angular1_basic
+# AngularJS-1 Basic
